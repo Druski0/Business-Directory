@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizHub | Business Directory</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-store"></i></div>
+        <span>BizHub.</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <label for="nav-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="business.html">Businesses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li class="mobile-signin-item">
+          <a class="btn-login" href="signup.html">
+            Sign In <i class="fa-solid fa-circle-user"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn-login" href="signup.html">
+          Sign In <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content container">
+      <h1>
+        Find Local <br />
+        <span class="text-yellow">Businesses Near You</span>
+      </h1>
+
+      <div class="main-search">
+        <input type="text" placeholder="Search for a service, shop, or company (e.g. barber, cafe, mechanic)" />
+        <button class="btn-search">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+      </div>
+
+      <div class="hero-tags">
+        <a href="details_cafe.html">Restaurants</a>
+        <a href="details_salon.html">Hair & Beauty</a>
+        <a href="details_auto.html">Repairs</a>
+        <a href="details_pharmacy.html">Health</a>
+        <a href="details_gym.html">Fitness</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about-section">
+    <div class="container about-flex">
+
+      <!-- LEFT -->
+      <div class="about-text">
+        <h3 class="about-label">Your Trusted Business Directory</h3>
+
+        <h2 class="about-title">Helping You Find The Right Services</h2>
+
+        <p class="about-desc">
+          BizHub helps users discover local businesses, compare services, and contact providers easily in one place.
+        </p>
+
+        <ul class="about-list">
+          <li><i class="fa-solid fa-location-dot"></i> Search businesses by location</li>
+          <li><i class="fa-solid fa-tags"></i> Browse different categories</li>
+          <li><i class="fa-solid fa-star"></i> View ratings and reviews</li>
+          <li><i class="fa-solid fa-phone"></i> Quick access to contact details</li>
+        </ul>
+
+        <div class="about-rating">
+          <div class="avatars">
+            <img src="https://i.pravatar.cc/40?u=1" alt="User avatar">
+            <img src="https://i.pravatar.cc/40?u=2" alt="User avatar">
+            <img src="https://i.pravatar.cc/40?u=3" alt="User avatar">
+            <img src="https://i.pravatar.cc/40?u=4" alt="User avatar">
+          </div>
+          <div class="rating-text">
+            <strong>4.9</strong> ★ <span>Trusted by local users</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="about-images">
+
+        <!-- LEFT COLUMN (BIGGER) -->
+        <div class="img-container">
+          <div class="img-big">
+            <img src="images/business.jpg" alt="Business">
+          </div>
+
+          <div class="exp-badge">
+            <div class="badge-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="badge-text">
+              <strong>100+</strong>
+              <span>Listed Businesses</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN (SMALLER) -->
+        <div class="img-small">
+          <img src="images/office.jpg" alt="Office">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+    <div class="container features-flex">
+
+      <!-- LEFT IMAGE -->
+      <div class="features-image">
+        <img src="images/home.jpg" alt="Home">
+        <div class="features-badge">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <strong>Trusted Experts</strong>
+            <span>Support from professionals</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="features-content">
+        <span class="features-label">Homes Made for Living</span>
+        <h2>Simplifying Your Search Every Step</h2>
+        <p>
+          From choosing the right provider to contacting them instantly, BizHub helps you make faster and better
+          decisions.
+        </p>
+
+        <div class="feature-rows">
+          <button class="feature-row" type="button">
+            <span>Lightning-Fast Booking</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button class="feature-row" type="button">
+            <span>Verified Local Businesses</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button class="feature-row" type="button">
+            <span>Responsive by Location</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button class="feature-row" type="button">
+            <span>Ratings & Reviews</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <button class="feature-row" type="button">
+            <span>Support When You Need It</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LISTINGS -->
+  <section class="listings container">
+    <div class="list-header">
+      <div>
+        <p class="label-gray">Popular Businesses</p>
+        <h2>Explore Services Around You</h2>
+      </div>
+      <button class="filter-btn" aria-label="Filter">
+        <i class="fa-solid fa-sliders"></i>
+      </button>
+    </div>
+
+    <div class="property-grid">
+      
+      <!-- CARD 1 -->
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cafe.jpg" alt="Cafe" />
+          <span class="tag-pill">Open Now</span>
+        </div>
+        <div class="card-body">
+          <h3>Sunny Cafe & Bakery</h3>
+          <p class="location">Coffee, snacks and fresh bread • City Centre</p>
+          <div class="card-footer">
+            <span class="star">★ 4.7</span>
+            <a href="details_cafe.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <div class="card-img">
+          <img src="images/salon.jpg" alt="Salon" />
+          <span class="tag-pill">Top Rated</span>
+        </div>
+        <div class="card-body">
+          <h3>Glow Beauty Salon</h3>
+          <p class="location">Hair, nails and makeup • Open 9am - 6pm</p>
+          <div class="card-footer">
+            <span class="star">★ 4.9</span>
+            <a href="details_salon.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <div class="card-img">
+          <img src="images/repair.jpg" alt="Repair" />
+          <span class="tag-pill">Verified</span>
+        </div>
+        <div class="card-body">
+          <h3>QuickFix Auto Repairs</h3>
+          <p class="location">Car servicing & repairs • Call for booking</p>
+          <div class="card-footer">
+            <span class="star">★ 4.6</span>
+            <a href="details_auto.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BANNER -->
+  <section class="banner-yellow">
+    <div class="container text-center">
+      <span class="badge-dark">
+        <i class="fa-solid fa-briefcase"></i> For Business Owners
+      </span>
+      <h2>List Your Business on <span class="text-darkblue">BizHub</span></h2>
+      <p class="banner-sub">
+        Get discovered by customers searching nearby. Add your business in minutes.
+      </p>
+      <button class="btn-dark">Add Business</button>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials container">
+    <div class="test-head">
+      <h2>What Users Say</h2>
+      <p>Real feedback from people using BizHub to find local services.</p>
+    </div>
+
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="test-user">
+          <img src="https://i.pravatar.cc/50?u=10" alt="User">
+          <div>
+            <div class="name-row">
+              <h4>Briar Martin</h4><i class="fa-solid fa-circle-check verified"></i>
+            </div>
+            <p>@briar_m</p>
+          </div>
+        </div>
+        <p>"I found a local repair shop quickly and contacted them the same day. Very simple to use."</p>
+        <div class="test-meta">
+          <span class="posted">Posted on BizHub</span>
+          <span class="test-date">June 5, 2025</span>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <div class="test-user">
+          <img src="https://i.pravatar.cc/50?u=11" alt="User">
+          <div>
+            <div class="name-row">
+              <h4>Avery Johnson</h4><i class="fa-solid fa-circle-check verified"></i>
+            </div>
+            <p>@avery_w</p>
+          </div>
+        </div>
+        <p>"The categories are clear. I compared salons around my area and booked in less than 5 minutes."</p>
+        <div class="test-meta">
+          <span class="posted">Posted on BizHub</span>
+          <span class="test-date">May 10, 2025</span>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <div class="test-user">
+          <img src="https://i.pravatar.cc/50?u=12" alt="User">
+          <div>
+            <div class="name-row">
+              <h4>Jordan Lee</h4><i class="fa-solid fa-circle-check verified"></i>
+            </div>
+            <p>@jordan_t</p>
+          </div>
+        </div>
+        <p>"I like how the contact details are shown clearly. No stress."</p>
+        <div class="test-meta">
+          <span class="posted">Posted on BizHub</span>
+          <span class="test-date">April 20, 2025</span>
+        </div>
+      </div>
+
+      <div class="test-card">
+        <div class="test-user">
+          <img src="https://i.pravatar.cc/50?u=13" alt="User">
+          <div>
+            <div class="name-row">
+              <h4>John Doe</h4><i class="fa-solid fa-circle-check verified"></i>
+            </div>
+            <p>@john_d</p>
+          </div>
+        </div>
+        <p>"Very useful for finding local services. The map/location idea is great for a directory."</p>
+        <div class="test-meta">
+          <span class="posted">Posted on BizHub</span>
+          <span class="test-date">June 5, 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-box"><i class="fa-solid fa-store"></i></div>
+          <span>BizHub.</span>
+        </div>
+        <p>
+          Discover trusted local businesses, services, and professionals—fast and simple.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://www.facebook.com" aria-label="Facebook" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com" aria-label="Instagram" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.x.com" aria-label="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>COMPANY</h4>
+        <a href="about.html">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+        <a href="#">Partners</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>SUPPORT</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Safety Information</a>
+        <a href="#">Cancellation Options</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Accessibility</a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>STAY UPDATED</h4>
+        <p>Subscribe to our newsletter for inspiration and special offers.</p>
+
+        <div class="input-group">
+          <input type="email" placeholder="Your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 BizHub. All rights reserved.</p>
+      <div class="b-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
