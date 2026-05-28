@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizHub | Businesses</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-store"></i></div>
+        <span>BizHub.</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <label for="nav-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="business.html">Businesses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li class="mobile-signin-item">
+          <a class="btn-login" href="signup.html">
+            Sign In <i class="fa-solid fa-circle-user"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn-login" href="signup.html">
+          Sign In <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="listing-hero">
+    <div class="container">
+      <p class="listing-kicker">Your Next Business Awaits!</p>
+      <h1 class="listing-title">Discover Services Near You</h1>
+
+      <div class="listing-topbar">
+        <p class="listing-count">Displaying <strong>1–9</strong> from <strong>3k</strong> businesses</p>
+
+        <button class="listing-filter-btn" type="button" aria-label="Filters">
+          <i class="fa-solid fa-sliders"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="container listing-layout">
+
+    <!-- LEFT FILTER SIDEBAR -->
+    <aside class="filters">
+      <div class="filter-block">
+        <h3>Sort By</h3>
+        <select class="select">
+          <option>Relevant</option>
+          <option>Top Rated</option>
+          <option>Nearest</option>
+          <option>Open Now</option>
+        </select>
+      </div>
+
+      <div class="filter-block">
+        <h3>Business Type</h3>
+        <label class="check"><input type="checkbox"> Restaurant</label>
+        <label class="check"><input type="checkbox"> Hair & Beauty</label>
+        <label class="check"><input type="checkbox"> Repairs</label>
+        <label class="check"><input type="checkbox"> Health</label>
+        <label class="check"><input type="checkbox"> Fitness</label>
+        <label class="check"><input type="checkbox"> Shopping</label>
+      </div>
+
+      <div class="filter-block">
+        <h3>Rating</h3>
+        <label class="check"><input type="checkbox"> 4.5+ stars</label>
+        <label class="check"><input type="checkbox"> 4.0+ stars</label>
+        <label class="check"><input type="checkbox"> 3.5+ stars</label>
+      </div>
+
+      <div class="filter-block">
+        <h3>Price Range</h3>
+        <label class="check"><input type="checkbox"> £</label>
+        <label class="check"><input type="checkbox"> ££</label>
+        <label class="check"><input type="checkbox"> £££</label>
+      </div>
+    </aside>
+
+    <!-- RIGHT LISTING GRID -->
+    <section class="listing-grid">
+
+      <!-- CARD 1 -->
+      <article class="biz-card">
+        <div class="biz-img">
+          <img src="images/cafe.jpg" alt="Cafe">
+          <span class="biz-chip">Restaurant</span>
+          <span class="biz-price">££</span>
+        </div>
+
+        <div class="biz-body">
+          <h3 class="biz-title">Sunny Cafe & Bakery</h3>
+          <p class="biz-desc">Fresh pastries, coffee & breakfast • City Centre</p>
+
+          <div class="biz-icons">
+            <span><i class="fa-solid fa-star"></i> 4.7</span>
+            <span><i class="fa-solid fa-location-dot"></i> 1.2mi</span>
+            <span><i class="fa-solid fa-clock"></i> Open</span>
+            <span><i class="fa-solid fa-phone"></i> Call</span>
+          </div>
+
+          <div class="biz-bottom">
+            <span class="biz-highlight">Open Now</span>
+            <a href="details_cafe.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="biz-card">
+        <div class="biz-img">
+          <img src="images/salon.jpg" alt="Salon">
+          <span class="biz-chip">Hair & Beauty</span>
+          <span class="biz-price">££</span>
+        </div>
+
+        <div class="biz-body">
+          <h3 class="biz-title">Glow Beauty Salon</h3>
+          <p class="biz-desc">Hair, nails & makeup • Book appointments easily</p>
+
+          <div class="biz-icons">
+            <span><i class="fa-solid fa-star"></i> 4.9</span>
+            <span><i class="fa-solid fa-location-dot"></i> 2.0mi</span>
+            <span><i class="fa-solid fa-calendar-check"></i> Booking</span>
+            <span><i class="fa-solid fa-bolt"></i> Fast</span>
+          </div>
+
+          <div class="biz-bottom">
+            <span class="biz-highlight">Top Rated</span>
+            <a href="details_salon.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="biz-card">
+        <div class="biz-img">
+          <img src="images/repair.jpg" alt="Auto repair">
+          <span class="biz-chip">Repairs</span>
+          <span class="biz-price">£££</span>
+        </div>
+
+        <div class="biz-body">
+          <h3 class="biz-title">QuickFix Auto Repairs</h3>
+          <p class="biz-desc">Servicing & repairs • Verified professionals</p>
+
+          <div class="biz-icons">
+            <span><i class="fa-solid fa-star"></i> 4.6</span>
+            <span><i class="fa-solid fa-location-dot"></i> 3.7mi</span>
+            <span><i class="fa-solid fa-shield-check"></i> Verified</span>
+            <span><i class="fa-solid fa-wrench"></i> Repairs</span>
+          </div>
+
+          <div class="biz-bottom">
+            <span class="biz-highlight">Verified</span>
+            <a href="details_auto.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="biz-card">
+        <div class="biz-img">
+          <img src="images/fittness.jpg" alt="Gym">
+          <span class="biz-chip">Fitness</span>
+          <span class="biz-price">££</span>
+        </div>
+
+        <div class="biz-body">
+          <h3 class="biz-title">Pulse Fitness Studio</h3>
+          <p class="biz-desc">Strength, cardio & classes • Friendly trainers</p>
+
+          <div class="biz-icons">
+            <span><i class="fa-solid fa-star"></i> 4.5</span>
+            <span><i class="fa-solid fa-location-dot"></i> 0.9mi</span>
+            <span><i class="fa-solid fa-dumbbell"></i> Gym</span>
+            <span><i class="fa-solid fa-users"></i> Classes</span>
+          </div>
+
+          <div class="biz-bottom">
+            <span class="biz-highlight">Popular</span>
+            <a href="details_gym.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 5 -->
+      <article class="biz-card">
+        <div class="biz-img">
+          <img src="images/pharmacy.jpg" alt="Pharmacy">
+          <span class="biz-chip">Health</span>
+          <span class="biz-price">£</span>
+        </div>
+
+        <div class="biz-body">
+          <h3 class="biz-title">CarePlus Pharmacy</h3>
+          <p class="biz-desc">Medicines & health advice • Walk-in support</p>
+
+          <div class="biz-icons">
+            <span><i class="fa-solid fa-star"></i> 4.4</span>
+            <span><i class="fa-solid fa-location-dot"></i> 1.8mi</span>
+            <span><i class="fa-solid fa-notes-medical"></i> Health</span>
+            <span><i class="fa-solid fa-circle-info"></i> Advice</span>
+          </div>
+
+          <div class="biz-bottom">
+            <span class="biz-highlight">Trusted</span>
+            <a href="details_pharmacy.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- CARD 6 -->
+      <article class="biz-card">
+        <div class="biz-img">
+          <img src="images/restaurant.jpg" alt="Restaurant">
+          <span class="biz-chip">Restaurant</span>
+          <span class="biz-price">£££</span>
+        </div>
+
+        <div class="biz-body">
+          <h3 class="biz-title">Bistro Nights</h3>
+          <p class="biz-desc">Dinner & drinks • Cozy atmosphere</p>
+
+          <div class="biz-icons">
+            <span><i class="fa-solid fa-star"></i> 4.8</span>
+            <span><i class="fa-solid fa-location-dot"></i> 2.9mi</span>
+            <span><i class="fa-solid fa-utensils"></i> Dining</span>
+            <span><i class="fa-solid fa-clock"></i> 5pm–11pm</span>
+          </div>
+
+          <div class="biz-bottom">
+            <span class="biz-highlight">Trending</span>
+            <a href="details_bistro.html" class="view-link">View Details →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PAGINATION -->
+      <div class="pagination">
+        <button class="page-btn" disabled>Prev</button>
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">Next</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-box"><i class="fa-solid fa-store"></i></div>
+          <span>BizHub.</span>
+        </div>
+        <p>
+          Discover trusted local businesses, services, and professionals—fast and simple.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com" aria-label="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>COMPANY</h4>
+        <a href="about.html">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+        <a href="#">Partners</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>SUPPORT</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Safety Information</a>
+        <a href="#">Cancellation Options</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Accessibility</a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>STAY UPDATED</h4>
+        <p>Subscribe to our newsletter for inspiration and special offers.</p>
+
+        <div class="input-group">
+          <input type="email" placeholder="Your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 BizHub. All rights reserved.</p>
+      <div class="b-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

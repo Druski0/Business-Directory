@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizHub | Login / Sign Up</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+
+<body class="auth-page">
+
+  <!-- LOGIN MODAL (shows first) -->
+  <div class="modal-overlay show" id="loginModal" aria-hidden="false">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+
+      <a class="modal-close" href="index.html" aria-label="Close">&times;</a>
+
+      <h2 class="modal-title" id="loginTitle">Sign in to BizHub</h2>
+      <p class="modal-sub">Welcome back! Please sign in to continue</p>
+
+      <button class="btn-google" type="button">
+        <img class="google-icon" src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" />
+        Continue with Google
+      </button>
+
+      <div class="modal-divider"><span>or</span></div>
+
+      <label class="modal-label" for="loginEmail">Email address</label>
+      <input class="modal-input" id="loginEmail" type="email" placeholder="Enter your email address" />
+
+      <label class="modal-label" for="loginPass">Password</label>
+      <div class="pass-wrap">
+        <input class="modal-input pass-input" id="loginPass" type="password" placeholder="Enter your password" />
+        <button class="pass-toggle" type="button" data-toggle="#loginPass" aria-label="Show password">
+          <i class="fa-regular fa-eye"></i>
+        </button>
+      </div>
+
+      <button class="btn-continue" type="button">
+        Continue <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <p class="modal-footer">
+        Don’t have an account? <a href="#" id="openSignup">Sign up</a>
+      </p>
+
+      <div class="signup-bottom">
+        <p class="secured">Secured by <strong>BizHub</strong></p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- SIGNUP MODAL -->
+  <div class="modal-overlay" id="signupModal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="signupTitle">
+
+      <a class="modal-close" href="index.html" aria-label="Close">&times;</a>
+
+      <h2 class="modal-title" id="signupTitle">Create your account</h2>
+      <p class="modal-sub">Welcome! Please fill in the details to get started.</p>
+
+      <button class="btn-google" type="button">
+        <img class="google-icon" src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" />
+        Continue with Google
+      </button>
+
+      <div class="modal-divider"><span>or</span></div>
+
+      <div class="name-row-2">
+        <div>
+          <div class="label-inline">
+            <label class="modal-label" for="firstName">First name</label>
+            <span class="optional">Optional</span>
+          </div>
+          <input class="modal-input" id="firstName" type="text" placeholder="First name" />
+        </div>
+
+        <div>
+          <div class="label-inline">
+            <label class="modal-label" for="lastName">Last name</label>
+            <span class="optional">Optional</span>
+          </div>
+          <input class="modal-input" id="lastName" type="text" placeholder="Last name" />
+        </div>
+      </div>
+
+      <label class="modal-label" for="signupEmail">Email address</label>
+      <input class="modal-input" id="signupEmail" type="email" placeholder="Enter your email address" />
+
+      <label class="modal-label" for="signupPass">Password</label>
+      <div class="pass-wrap">
+        <input class="modal-input pass-input" id="signupPass" type="password" placeholder="Enter your password" />
+        <button class="pass-toggle" type="button" data-toggle="#signupPass" aria-label="Show password">
+          <i class="fa-regular fa-eye"></i>
+        </button>
+      </div>
+
+      <button class="btn-continue" type="button">
+        Continue <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+      <p class="modal-footer">
+        Already have an account? <a href="#" id="openLogin">Sign in</a>
+      </p>
+
+      <div class="signup-bottom">
+        <p class="secured">Secured by <strong>BizHub</strong></p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizHub | About</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="container nav-container">
+     <a href="index.html" class="logo">
+      <div class="logo-icon"><i class="fa-solid fa-store"></i></div>
+      <span>BizHub.</span>
+    </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <label for="nav-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="business.html">Businesses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li class="mobile-signin-item">
+          <a class="btn-login" href="signup.html">
+            Sign In <i class="fa-solid fa-circle-user"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn-login" href="signup.html">
+          Sign In <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="about-page">
+    <div class="container">
+
+      <!-- HERO -->
+      <section class="about-hero">
+        <span class="about-pill"><i class="fa-solid fa-circle-info"></i> About BizHub</span>
+        <h1>Helping People Find Trusted Local Businesses — Fast.</h1>
+        <p>
+          BizHub is a simple business directory where users can search by location, browse categories,
+          and contact businesses easily in one place.
+        </p>
+
+        <div class="about-hero-cards">
+          <div class="about-stat">
+            <i class="fa-solid fa-store"></i>
+            <strong>100+</strong>
+            <span>Businesses Listed</span>
+          </div>
+          <div class="about-stat">
+            <i class="fa-solid fa-location-dot"></i>
+            <strong>50+</strong>
+            <span>Areas Covered</span>
+          </div>
+          <div class="about-stat">
+            <i class="fa-solid fa-star"></i>
+            <strong>4.9</strong>
+            <span>Average Rating</span>
+          </div>
+          <div class="about-stat">
+            <i class="fa-solid fa-user-check"></i>
+            <strong>Verified</strong>
+            <span>Trusted Listings</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO SECTION -->
+      <section class="about-video">
+        <div class="container">
+          <h2 class="video-title">See How BizHub Works</h2>
+
+          <div class="video-wrapper">
+            <video controls autoplay muted loop>
+              <source src="videos/bizhub.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- STORY + IMAGE -->
+      <section class="about-split">
+        <div class="about-split-text">
+          <p class="about-label">Our Mission</p>
+          <h2>Make it easier to discover great services nearby.</h2>
+          <p class="about-muted">
+            People waste time searching different places for the same thing. BizHub brings businesses and customers
+            together with clear listings, contact info, and simple categories.
+          </p>
+
+          <div class="about-points">
+            <div class="about-point">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <div>
+                <h4>Search & Find</h4>
+                <p>Search businesses by name, category, or location.</p>
+              </div>
+            </div>
+
+            <div class="about-point">
+              <i class="fa-solid fa-tags"></i>
+              <div>
+                <h4>Browse Categories</h4>
+                <p>Restaurants, salons, repairs, health, fitness, and more.</p>
+              </div>
+            </div>
+
+            <div class="about-point">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Contact Quickly</h4>
+                <p>Call, email, or send a message directly from the details page.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-split-img">
+          <img src="images/business.jpg" alt="Team working" />
+          <div class="about-img-badge">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>Trusted Directory</strong>
+              <span>Verified businesses & reviews</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUES -->
+      <section class="about-values">
+        <div class="about-values-head">
+          <p class="about-label">Our Values</p>
+          <h2>What BizHub stands for</h2>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <i class="fa-solid fa-shield"></i>
+            <h3>Trust</h3>
+            <p>We focus on clear information and honest listings.</p>
+          </div>
+
+          <div class="value-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Simplicity</h3>
+            <p>Clean design so users can find what they need quickly.</p>
+          </div>
+
+          <div class="value-card">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Support</h3>
+            <p>Helping small businesses get discovered by local customers.</p>
+          </div>
+
+          <div class="value-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Growth</h3>
+            <p>Better visibility for owners, better choices for users.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="about-cta">
+        <div class="about-cta-inner">
+          <div>
+            <h2>Want your business to show here?</h2>
+            <p>Add your business and get discovered by people searching nearby.</p>
+          </div>
+          <a class="about-cta-btn" href="business.html">Explore Businesses</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-box"><i class="fa-solid fa-store"></i></div>
+          <span>BizHub.</span>
+        </div>
+        <p>
+          Discover trusted local businesses, services, and professionals—fast and simple.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com" aria-label="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>COMPANY</h4>
+        <a href="about.html">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+        <a href="#">Partners</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>SUPPORT</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Safety Information</a>
+        <a href="#">Cancellation Options</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Accessibility</a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>STAY UPDATED</h4>
+        <p>Subscribe to our newsletter for inspiration and special offers.</p>
+
+        <div class="input-group">
+          <input type="email" placeholder="Your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 BizHub. All rights reserved.</p>
+      <div class="b-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

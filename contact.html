@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizHub | Contact</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-store"></i></div>
+        <span>BizHub.</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <label for="nav-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="business.html">Businesses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li class="mobile-signin-item">
+          <a class="btn-login" href="signup.html">
+            Sign In <i class="fa-solid fa-circle-user"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn-login" href="signup.html">
+          Sign In <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTACT -->
+  <section class="contact-page">
+    <div class="container contact-wrap">
+
+      <div class="contact-head">
+        <span class="contact-pill">Contact Us</span>
+        <h1>Let’s Get In Touch.</h1>
+        <p>
+          Or reach out manually at
+          <a class="contact-email" href="mailto:contact@BizHub.com">contact@BizHub.com</a>
+        </p>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label class="contact-label" for="fullName">Full Name</label>
+        <div class="contact-input">
+          <i class="fa-regular fa-user"></i>
+          <input id="fullName" type="text" placeholder="Enter your full name" required />
+        </div>
+
+        <label class="contact-label" for="email">Email Address</label>
+        <div class="contact-input">
+          <i class="fa-regular fa-envelope"></i>
+          <input id="email" type="email" placeholder="Enter your email address" required />
+        </div>
+
+        <label class="contact-label" for="message">Message</label>
+        <textarea id="message" class="contact-textarea" placeholder="Enter your message" required></textarea>
+
+        <button class="contact-submit" type="submit">
+          Submit Form <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <p class="contact-note" id="contactNote" aria-live="polite"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-box"><i class="fa-solid fa-store"></i></div>
+          <span>BizHub.</span>
+        </div>
+        <p>
+          Discover trusted local businesses, services, and professionals—fast and simple.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com" aria-label="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>COMPANY</h4>
+        <a href="about.html">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+        <a href="#">Partners</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>SUPPORT</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Safety Information</a>
+        <a href="#">Cancellation Options</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Accessibility</a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>STAY UPDATED</h4>
+        <p>Subscribe to our newsletter for inspiration and special offers.</p>
+
+        <div class="input-group">
+          <input type="email" placeholder="Your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 BizHub. All rights reserved.</p>
+      <div class="b-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

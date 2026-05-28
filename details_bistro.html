@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizHub | Bistro Nights</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-store"></i></div>
+        <span>BizHub.</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+      <label for="nav-toggle" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="business.html">Businesses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <li class="mobile-signin-item">
+          <a class="btn-login" href="signup.html">
+            Sign In <i class="fa-solid fa-circle-user"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn-login" href="signup.html">
+          Sign In <i class="fa-solid fa-circle-user"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="details-page">
+    <div class="container">
+
+      <section class="details-grid">
+
+        <div class="details-left">
+
+          <div class="gallery-main">
+            <img src="images/restaurant.jpg" alt="Bistro Nights main" />
+            <div class="gallery-hint">
+              <i class="fa-solid fa-magnifying-glass"></i> Click to enlarge
+            </div>
+          </div>
+
+          <div class="gallery-thumbs">
+            <img src="images/restaurant 2.jpg" alt="Bistro thumb 1" />
+            <img src="images/restaurant 3.jpg" alt="Bistro thumb 2" />
+            <img src="images/restaurant 4.jpg" alt="Bistro thumb 3" />
+          </div>
+
+          <p class="photos-note">3 photos available • Add more thumbnails if you want</p>
+
+          <div class="biz-head">
+            <h1>Bistro Nights</h1>
+
+            <div class="biz-meta">
+              <span class="biz-meta-item">
+                <i class="fa-solid fa-location-dot"></i>
+                Nethergate, Dundee
+              </span>
+
+              <span class="pill">Restaurant</span>
+
+              <span class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <strong>4.8</strong>
+              </span>
+            </div>
+          </div>
+
+          <div class="info-cards">
+            <div class="info-card">
+              <i class="fa-solid fa-clock"></i>
+              <strong>Open</strong>
+              <span>5:00pm – 11:00pm</span>
+            </div>
+
+            <div class="info-card">
+              <i class="fa-solid fa-phone"></i>
+              <strong>Phone</strong>
+              <span>+44 7400 555555</span>
+            </div>
+
+            <div class="info-card">
+              <i class="fa-solid fa-utensils"></i>
+              <strong>Service</strong>
+              <span>Dinner • Drinks</span>
+            </div>
+
+            <div class="info-card">
+              <i class="fa-solid fa-tag"></i>
+              <strong>Price</strong>
+              <span>£££ (Premium)</span>
+            </div>
+          </div>
+
+          <section class="details-section">
+            <h2>Description</h2>
+            <p>
+              Bistro Nights is a cozy dinner spot with a relaxed atmosphere, signature dishes, and a curated drinks
+              menu.
+              Perfect for date nights, small celebrations, and evening meals in the city.
+            </p>
+          </section>
+
+          <section class="details-section">
+            <h2>Services</h2>
+
+            <div class="amenities">
+              <span class="amenity"><i class="fa-solid fa-check"></i> Table Reservations</span>
+              <span class="amenity"><i class="fa-solid fa-check"></i> Vegetarian Options</span>
+              <span class="amenity"><i class="fa-solid fa-check"></i> Card Payments</span>
+              <span class="amenity"><i class="fa-solid fa-check"></i> Dine-in</span>
+              <span class="amenity"><i class="fa-solid fa-check"></i> Drinks Menu</span>
+              <span class="amenity"><i class="fa-solid fa-check"></i> Cozy Atmosphere</span>
+            </div>
+          </section>
+
+          <section class="details-section">
+            <h2>Location</h2>
+
+            <div class="map-box">
+              <iframe title="Map" src="https://www.google.com/maps?q=Nethergate%20Dundee&output=embed"
+                loading="lazy"></iframe>
+            </div>
+          </section>
+
+        </div>
+
+        <aside class="details-right">
+          <div class="side-card">
+            <div class="side-top">
+              <div>
+                <p class="side-label">Contact Business</p>
+                <h3>Send a Message</h3>
+              </div>
+              <span class="status-pill">Trending</span>
+            </div>
+
+            <form class="contact-mini">
+              <label>
+                <span>Your Name</span>
+                <input type="text" placeholder="Enter your name" />
+              </label>
+
+              <label>
+                <span>Your Email</span>
+                <input type="email" placeholder="Enter your email" />
+              </label>
+
+              <label>
+                <span>Your Message</span>
+                <textarea rows="5" placeholder="Write your message..."></textarea>
+              </label>
+
+              <button type="button" class="side-btn">Send Message</button>
+            </form>
+
+            <div class="side-divider"></div>
+
+            <div class="owner-card">
+              <div class="owner-head">
+                <div>
+                  <h4>Bistro Nights</h4>
+                  <p>Business Owner</p>
+                </div>
+                <span class="owner-badge">Verified</span>
+              </div>
+
+              <div class="owner-rows">
+                <div class="owner-row">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+44 7400 555555</span>
+                </div>
+                <div class="owner-row">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>bistro@bizhub.com</span>
+                </div>
+              </div>
+
+              <div class="owner-actions">
+                <a class="owner-action" href="mailto:bistro@bizhub.com">
+                  <i class="fa-solid fa-paper-plane"></i> Send Email
+                </a>
+                <a class="owner-action" href="tel:+447400555555">
+                  <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-box"><i class="fa-solid fa-store"></i></div>
+          <span>BizHub.</span>
+        </div>
+        <p>
+          Discover trusted local businesses, services, and professionals—fast and simple.
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://facebook.com" aria-label="Facebook" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com" aria-label="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>COMPANY</h4>
+        <a href="about.html">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+        <a href="#">Blog</a>
+        <a href="#">Partners</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>SUPPORT</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Safety Information</a>
+        <a href="#">Cancellation Options</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="#">Accessibility</a>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>STAY UPDATED</h4>
+        <p>Subscribe to our newsletter for inspiration and special offers.</p>
+
+        <div class="input-group">
+          <input type="email" placeholder="Your email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 BizHub. All rights reserved.</p>
+      <div class="b-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
